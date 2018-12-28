@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Frontman Survey</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1 id="title">Rock n' Roll Frontman Survey</h1>
+    <div id="main">
+      <p id="description">Tell us who is the greatest Rock n' Roll frontman of all time!<br>
+        First, a bit about you...
+      </p>
+        <form id="survey-form">
+      <label id="name-label" for="name">* Name: </label>
+        <input class="input" autofocus type="text" name="name" id="name" placeholder="Enter your name" required></p>
+      <p>
+        <label id="number-label" for="age">* Age: </label>
+        <input class ="inputage" id="number" type="number" name="age" min="5" max="125" placeholder="Enter age" required>
+      </p>
+      <p>
+        <label id="email-label" for="email">* Email: </label>
+        <input class ="input" id="email" type="email" name="email" placeholder="Enter your email" required>
+      </p>
+      <p>
+        <label id="dropdown-label" for="inst">What instrument do you play?</label>
+        <select id="dropdown" name ="inst">
+          <option value="Guitar">Guitar</option>
+          <option value="Bass">Bass</option>
+          <option value="Drums">Drums</option>
+          <option value="Keyboard">Keyboard</option>
+          <option value="Vocals">Vocals</option>
+          <option value="Classical">Classical Instruments</option>
+          <option value="Other">Other</option>
+          <option value="N/A">I don't play an instrument</option>
+        </select>
+      </p>
+      <p>
+        <label id="band-label" for="band">Are you currently in a band?</label>
+        <ul id="buttons1" style="list-style: none;">
+          <li><input name="band" value="1"  type="radio"><label>Yes</label></li>
+          <li><input name="band" value="2" type="radio"><label>No</label></li>
+          <li><input name="band" value="3" type="radio"><label>It's complicated</label></li>
+      </ul>
+      </p>
+    <p>
+      <label id="genre-label" for="genre">What are your favorite genres? (Check all that apply)</label>
+      <ul style="list-style: none;">
+        <li><input type="checkbox" name="genre" value="1"><label>Classic Rock</label></li>
+                <li><input type="checkbox" name="genre" value="2"><label>Heavy Metal</label></li>
+                <li><input type="checkbox" name="genre" value="3"><label>Prog Rock</label></li>
+                <li><input type="checkbox" name="genre" value="4"><label>Hardcore</label></li>
+                <li><input type="checkbox" name="genre" value="5"><label>Death Metal</label></li>
+                 <li><input type="checkbox" name="genre" value="6"><label>Black Metal</label></li>
+                 <li><input type="checkbox" name="genre" value="7"><label>Other</label></li>
+    </ul>
+    </p>
+  <p>
+    <label id="vote-label" name="vote">Vote for your all-time favorite frontman/vocalist:</label>
+    <ul style="list-style: none;">
+      <li><input type="radio" name="vote" value="1"><label>Freddie Mercury</label></li>
+      <li><input type="radio" name="vote" value="2"><label>Bon Scott</label></li>
+      <li><input type="radio" name="vote" value="3"><label>Robert Plant</label></li>
+      <li><input type="radio" name="vote" value="4"><label>Geddy Lee</label></li>
+      <li><input type="radio" name="vote" value="5"><label>Jimi Hendrix</label></li>
+      <li><input type="radio" name="vote" value="6"><label>Brian Johnson</label></li>
+      <li><input type="radio" name="vote" value="7"><label>Ozzy Osbourne</label></li>
+      <li><input type="radio" name="vote" value="8"><label>Kurt Cobain</label></li>
+      <li><input type="radio" name="vote" value="9"><label>Mick Jagger</label></li>
+      <li><input type="radio" name="vote" value="10"><label>Jim Morrison</label></li>
+      <li><input type="radio" name="vote" value="11"><label>Steven Tyler</label></li>
+      <li><input type="radio" name="vote" value="12"><label>Anthony Kiedis</label></li>
+      <li><input type="radio" name="vote" value="13"><label>James Hetfield</label></li>
+  </ul>
+  </p>
+<p>
+  <label for="other-vote">If your favorite frontman is not listed above, please enter their name here: </label><br>
+  <input type="text" name="other-vote" class="input">
+</p>
+<label for="comments" id="comment-label"><p>Please insert any additional comments below:</p></label>
+<textarea id="comments" class="input-field" style="height:80px; width: 200px;" name="comments" placeholder="Enter your comment here..."></textarea>
+<br>
+    <button id="submit" type="submit">Submit</button> 
+    </div>
+  </form>
+  </body>
+</html>

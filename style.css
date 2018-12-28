@@ -1,0 +1,50 @@
+html {
+  background: gray;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  min-width: 260px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  margin: 1.2em;
+  font-size: 36px;
+}
+
+label {
+  padding: 5px;
+}
+
+.input {
+  width: 200px;
+}
+
+.inputage {
+  width: 75px;
+}
+
+#main {
+  text-align: center;
+  background: white;
+  max-width: 960px;
+  margin: auto;
+  padding: 1px;
+  padding-bottom: 30px;
+}
+
+#main > p {
+  margin: 25px;
+  font-size: 1em;
+}
+
+#band-label {
+
+}
+
+#buttons1 {
+
+}
