@@ -1,6 +1,7 @@
 html {
-  background: gray;
+  /*background: gray;*/
   font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #D2C9C9, #292929);
 }
 
 body {
@@ -9,31 +10,52 @@ body {
   text-align: center;
 }
 
+p {
+  padding-bottom: 10px;
+}
+
+#background-image {
+  position: fixed;
+  top: 75%;
+  bottom: 25%;
+  opacity: 0.3;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  z-index: -1;
+}
+
+#description {
+  margin-top: 200px;
+}
+
 h1 {
   font-family: 'Playfair Display SC', serif;
   margin: 1.2em;
-  font-size: 36px;
-}
-
-label {
-  padding: 5px;
+  font-size: 48px;
+  color: rgb(255,255,255);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .input {
   width: 200px;
+  height: 25px;
 }
 
 .inputage {
   width: 75px;
+  height: 25px;
 }
 
 #main {
   text-align: center;
-  background: white;
+  background: rgba(255,255,255,65%);
   max-width: 960px;
   margin: auto;
   padding: 1px;
+  padding-top: 25px;
   padding-bottom: 30px;
+  border: ridge 5px white;
+  font-size: 1.2em;
 }
 
 #main > p {
@@ -47,4 +69,45 @@ label {
 
 #buttons1 {
 
+}
+
+#comments {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#dropdown {
+  height: 25px;
+}
+
+#custom-response {
+  margin-bottom: 30px;
+}
+
+#submit {
+  width: 150px;
+  height: 27px;
+  border: outset 2px white;
+  font-family: 'Open Sans', sans-serif;
+  background: rgba(255,255,255,0.75);
+  border-radius: 2px;
+}
+
+.input, .inputage, #dropdown, #comments {
+   border: inset 2px white;
+}
+/* Above code easily changes border for multiple input fields*/ 
+
+input[type='checkbox'] {
+    width:15px;
+    height:15px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+input[type='radio'] {
+  width: 15px;
+  height: 15px;
 }
